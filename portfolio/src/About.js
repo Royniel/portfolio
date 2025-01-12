@@ -1,3 +1,5 @@
+import './styles/Header.css';
+
 const About = () => (
     <section id="about">
       <h1>About Me</h1>
