@@ -5,28 +5,29 @@ body {
 
 .App {
   text-align: center;
-  background-image: url('./assets/background.png'); /* Background image */
-  background-size: cover; /* Cover the entire page */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent tiling */
-  color: white; /* Make text visible over background */
-  height: 100vh; /* Viewport height */
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  color: black;
 }
 
-.App-header {
-  padding: 1rem;
-  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the header */
+/* Section with background image */
+.App-background {
+  background-image: url('./assets/background.png'); /* Background image */
+  background-size: cover; /* Ensure the image covers the section */
+  background-position: center;
+  background-repeat: no-repeat; /* No tiling */
+  height: 50vh; /* Set the height to half of the viewport */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
 }
 
 .App-logo {
-  height: 150px;
-  margin: 1rem auto;
-  display: block;
+  height: 100px;
+  margin-bottom: 1rem;
 }
 
+/* Main content */
 main {
   padding: 2rem;
 }
@@ -44,8 +45,9 @@ p, ul {
   font-size: 1.2rem;
 }
 
+/* Footer styles */
 footer {
-  background: rgba(0, 0, 0, 0.7); /* Semi-transparent footer */
+  background: #333;
   color: white;
   text-align: center;
   padding: 1rem;

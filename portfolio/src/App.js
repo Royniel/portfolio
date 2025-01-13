@@ -1,13 +1,14 @@
 import './App.css';
-import logo from './assets/logo1.png'; // Import your logo
+import background from './assets/background.png';
+
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        {/* Display the logo */}
-        <img src={logo} className="App-logo" alt="logo" />
+    
         <h1>Welcome to My Portfolio</h1>
+        <img src={background} alt="bakcground" className="App-background" />
       </header>
       <main>
         <section id="about">
