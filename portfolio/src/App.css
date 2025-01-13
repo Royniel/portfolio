@@ -1,27 +1,52 @@
 body {
-  font-family: Arial, sans-serif;
   margin: 0;
-  padding: 0;
-  background-color: #f4f4f4;
+  font-family: Arial, sans-serif;
 }
 
-header {
-  background-color: #333;
-  color: white;
+.App {
   text-align: center;
+  background-image: url('./assets/background.png'); /* Background image */
+  background-size: cover; /* Cover the entire page */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+  color: white; /* Make text visible over background */
+  height: 100vh; /* Viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.App-header {
   padding: 1rem;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for the header */
+}
+
+.App-logo {
+  height: 150px;
+  margin: 1rem auto;
+  display: block;
 }
 
 main {
   padding: 2rem;
 }
 
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+}
+
+p, ul {
+  font-size: 1.2rem;
+}
+
 footer {
+  background: rgba(0, 0, 0, 0.7); /* Semi-transparent footer */
+  color: white;
   text-align: center;
   padding: 1rem;
-  background-color: #333;
-  color: white;
-  position: fixed;
-  bottom: 0;
-  width: 100%;
 }
