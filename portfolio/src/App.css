@@ -1,70 +1,63 @@
 body {
   margin: 0;
   font-family: Arial, sans-serif;
+  background-color: black; /* Set background color to black */
+  color: white; /* Set font color to white */
 }
 
 .App {
   text-align: center;
-  color: black;
 }
 
-/* Section with background image */
-.App-background {
-  background-image: url('./assets/background.png'); /* Background image */
-  background-size: cover; /* Ensure the image covers the section */
-  background-position: center;
-  background-repeat: no-repeat; /* No tiling */
-  height: 50vh; /* Set the height to half of the viewport */
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  color: white;
+/* Carousel container */
+.carousel-container {
+  position: relative;
+  max-width: 800px;
+  margin: 2rem auto;
+  overflow: hidden;
 }
 
-.App-logo {
-  height: 100px;
-  margin-bottom: 1rem;
-}
-.Home {
-  text-align: center;
-  padding: 2rem;
-}
-
-.carousel-item img {
-  max-height: 400px;
-  object-fit: cover;
-}
-
-.carousel-caption {
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 1rem;
+/* Carousel slide */
+.carousel-slide img {
+  width: 100%;
   border-radius: 10px;
 }
 
-/* Main content */
-main {
-  padding: 2rem;
-}
-
-h1 {
-  font-size: 2.5rem;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-top: 2rem;
-}
-
-p, ul {
-  font-size: 1.2rem;
-}
-
-/* Footer styles */
-footer {
-  background: #333;
+.carousel-caption {
+  position: absolute;
+  bottom: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.5);
   color: white;
-  text-align: center;
-  padding: 1rem;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+/* Carousel buttons */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.5);
+  color: black;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 50%;
+  outline: none;
+  z-index: 1;
+}
+
+.carousel-button:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.carousel-button.left {
+  left: 10px;
+}
+
+.carousel-button.right {
+  right: 10px;
 }
