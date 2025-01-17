@@ -1,5 +1,4 @@
 import './App.css';
-import background from './assets/background.png';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import Project1 from './pages/Project1';
@@ -8,18 +7,19 @@ import Project2 from './pages/Project2';
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-    
+      {/* Banner Section */}
+      <div className="banner">
         <h1>Welcome to My Portfolio</h1>
-        <img src={background} alt="bakcground" className="App-background" />
-      </header>
+      </div>
+
       <Router>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/project1" element={<Project1 />} />
-        <Route path="/project2" element={<Project2 />} />
-      </Routes>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/project1" element={<Project1 />} />
+          <Route path="/project2" element={<Project2 />} />
+        </Routes>
       </Router>
+
       <main>
         <section id="about">
           <h2>About Me</h2>
@@ -36,6 +36,7 @@ function App() {
           </ul>
         </section>
       </main>
+
       <footer>
         <p>© 2025 Nilanjan Roy. All rights reserved.</p>
       </footer>
