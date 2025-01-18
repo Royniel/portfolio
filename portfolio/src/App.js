@@ -3,6 +3,9 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Home';
 import Project1 from './pages/Project1';
 import Project2 from './pages/Project2';
+import Project3 from './pages/Project3';
+import Project4 from './pages/Project4';
+import Project5 from './pages/Project5';
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/project1" element={<Project1 />} />
           <Route path="/project2" element={<Project2 />} />
+          <Route path="/project3" element={<Project3 />} />
+          <Route path="/project4" element={<Project4 />} />
+          <Route path="/project5" element={<Project5 />} />
         </Routes>
       </Router>
 
@@ -33,6 +39,9 @@ function App() {
           <ul>
             <li>Project 1: [Some Java Project]</li>
             <li>Project 2: [Some React Project]</li>
+            <li>Project 3: [Some React Project]</li>
+            <li>Project 4: [Some React Project]</li>
+            <li>Project 5: [Some React Project]</li>
           </ul>
         </section>
       </main>
