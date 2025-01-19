@@ -3,9 +3,9 @@ import { useNavigate } from 'react-router-dom';
 import './App.css';
 
 // Importing images for work experience and projects (Replace with actual paths)
-import experience1Image from './assets/velozi.png';
-import experience2Image from './assets/cynet.png';
-import experience3Image from './assets/mastech.png';
+import experience1Image from './assets/velozi.webp';
+import experience2Image from './assets/cynet.avif';
+import experience3Image from './assets/mastech.webp';
 import pathfinderImage from './assets/pathfinder.png';
 import restroManagerImage from './assets/restromanager.png';
 import stockOptimateImage from './assets/stockoptimate.png';
