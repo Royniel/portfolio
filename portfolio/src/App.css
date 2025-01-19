@@ -9,39 +9,11 @@ body {
   text-align: center;
 }
 
-/* Banner Section */
-.banner {
-  position: relative;
-  background-image: url('./assets/background.png'); /* Banner background */
-  background-size: cover; /* Ensure the image covers the section */
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 50vh; /* Height of the banner */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-  overflow: hidden;
-}
-
-/* Animated Text */
-.banner h1 {
-  font-size: 3rem;
-  text-align: center;
-  opacity: 0; /* Initially hidden */
-  animation: fadeIn 2s forwards; /* Fade in after 2 seconds */
-}
-
-/* Fade-in animation */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+h2 {
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  color: #f4f4f4;
 }
 
 /* Carousel container */
@@ -67,6 +39,7 @@ body {
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
+  text-align: center;
 }
 
 /* Carousel buttons */
