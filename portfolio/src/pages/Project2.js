@@ -1,8 +1,8 @@
 const Project2 = () => {
     return (
       <div>
-        <h1>Project 2: React Project</h1>
-        <p>Details about the React Project...</p>
+        <h1>Project 2: Hospital administration Project</h1>
+        <p>Details about the Java Netbeans Project...</p>
       </div>
     );
   };
