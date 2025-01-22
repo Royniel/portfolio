@@ -22,12 +22,12 @@ const Home = () => {
     {
       image: experience1Image,
       title: 'Velozy - Frontend Developer',
-      description: 'Refined the Velozy app using React Native, improved UX/UI and reduced app crashes by 15%.',
+      description: 'Refined the Velozy app using React Native with Expo, improved UX/UI and reduced app crashes by 15%.',
     },
     {
       image: experience2Image,
       title: 'Cynet Systems - Software Developer',
-      description: 'Built a candidate data processing system with Spring Boot and MongoDB, reducing retrieval latency by 20%.',
+      description: 'Built a candidate data processing system with Spring Boot, Hibernate and MongoDB, reducing retrieval latency by 20%.',
     },
     {
       image: experience3Image,
