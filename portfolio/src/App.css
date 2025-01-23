@@ -69,3 +69,63 @@ h2 {
 .carousel-button.right {
   right: 10px;
 }
+
+/* Footer styles */
+.footer {
+  background: linear-gradient(to right, #141e30, #243b55);
+  color: white;
+  padding: 2rem 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.footer-left, .footer-center, .footer-right {
+  flex: 1;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.footer-link {
+  color: #FFD700;
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin: 0 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.footer-link:hover {
+  color: #00e676;
+}
+
+.footer-icon {
+  font-size: 1.8rem;
+  color: #FFD700;
+  margin: 0 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.footer-icon:hover {
+  transform: scale(1.2);
+  color: #00e676;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+  }
+}
+
