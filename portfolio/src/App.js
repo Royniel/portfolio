@@ -36,21 +36,38 @@ function App() {
         </section>
         <section id="projects">
           <h2>Projects</h2>
-          <ul>
-            <li>Project 1: [Some Java Project]</li>
-            <li>Project 2: [Some React Project]</li>
-            <li>Project 3: [Some React Project]</li>
-            <li>Project 4: [Some React Project]</li>
-            <li>Project 5: [Some React Project]</li>
-          </ul>
+          
         </section>
       </main>
 
-      <footer>
-        <p>© 2025 Nilanjan Roy. All rights reserved.</p>
-      </footer>
+
+      <footer/>
     </div>
   );
 }
-
+const Footer = () => {
+  return (
+    <footer className="footer">
+      <div className="footer-container">
+        <div className="footer-left">
+          <p>&copy; {new Date().getFullYear()} Nilanjan Roy. All Rights Reserved.</p>
+        </div>
+        <div className="footer-center">
+          <a href="mailto:roy.nil@northeastern.edu" className="footer-link">
+            <i className="fas fa-envelope"></i> roy.nil@northeastern.edu
+          </a>
+          <a href="https://github.com/Royniel" target="_blank" rel="noopener noreferrer" className="footer-link">
+            <i className="fab fa-github"></i> GitHub
+          </a>
+        </div>
+        <div className="footer-right">
+          <p>Follow me on:</p>
+          <a href="https://github.com/Royniel" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-github footer-icon"></i>
+          </a>
+        </div>
+      </div>
+    </footer>
+  );
+};
 export default App;

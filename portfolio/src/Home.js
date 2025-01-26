@@ -10,7 +10,7 @@ import pathfinderImage from './assets/pathfinder.png';
 import restroManagerImage from './assets/restromanager.png';
 import stockOptimateImage from './assets/stockoptimate.png';
 import hospitalImage from './assets/hospital.png';
-import whiskerwagsImage from './assets/whiskerwags.png';
+import whiskerwagsImage from './assets/wiskerwags.png';
 
 const Home = () => {
   const [expIndex, setExpIndex] = useState(0);
