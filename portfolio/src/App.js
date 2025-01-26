@@ -26,22 +26,7 @@ function App() {
         </Routes>
       </Router>
 
-      <main>
-        <section id="about">
-          <h2>About Me</h2>
-          <p>
-            Hi, I'm Nilanjan Roy. I am a web developer with a passion for
-            creating beautiful and functional web applications.
-          </p>
-        </section>
-        <section id="projects">
-          <h2>Projects</h2>
-          
-        </section>
-      </main>
-
-
-      <footer/>
+      <Footer/>
     </div>
   );
 }
@@ -56,18 +41,20 @@ const Footer = () => {
           <a href="mailto:roy.nil@northeastern.edu" className="footer-link">
             <i className="fas fa-envelope"></i> roy.nil@northeastern.edu
           </a>
-          <a href="https://github.com/Royniel" target="_blank" rel="noopener noreferrer" className="footer-link">
-            <i className="fab fa-github"></i> GitHub
-          </a>
         </div>
         <div className="footer-right">
-          <p>Follow me on:</p>
+          <p>Follow my work on:
           <a href="https://github.com/Royniel" target="_blank" rel="noopener noreferrer">
             <i className="fab fa-github footer-icon"></i>
           </a>
+          <a href="https://www.linkedin.com/in/nilanjan-roy-619535147/" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-linkedin footer-icon"></i>
+          </a>
+          </p>
         </div>
       </div>
     </footer>
   );
 };
+
 export default App;
