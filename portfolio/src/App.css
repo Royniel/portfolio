@@ -16,6 +16,37 @@ h2 {
   color: #f4f4f4;
 }
 
+/* Banner Section */
+.banner {
+  position: relative;
+  background-image: url('./assets/background.png'); /* Path to your image */
+  background-size: cover; /* Ensure the image covers the section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent tiling */
+  height: 50vh; /* Set the height of the banner */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.banner h1 {
+  font-size: 3rem;
+  animation: fadeIn 2s ease-in-out; /* Fade-in effect */
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
 /* Carousel container */
 .carousel-container {
   position: relative;
