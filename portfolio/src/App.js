@@ -10,11 +10,31 @@ import Project5 from './pages/Project5';
 function App() {
   return (
     <div className="App">
-      {/* Banner Section */}
+      {/* Full-Screen Banner Section */}
       <div className="banner">
-        <h1>Welcome to My Portfolio</h1>
+        <div className="banner-content">
+          <h1>"Crafting Code, Engineering Dreams."</h1>
+        </div>
       </div>
 
+      {/* About Me Section */}
+      <section className="about-me">
+        <div className="about-container">
+          <div className="about-image">
+            <img src="./assets/profile.png" alt="Nilanjan Roy" />
+          </div>
+          <div className="about-text">
+            <h2>About Me</h2>
+            <p>
+              Hi, I'm <strong>Nilanjan Roy</strong>, a passionate Web Developer who specializes in creating elegant, efficient, and scalable applications.
+              I have extensive experience in <strong>MongoDB, Express.js, React, and Node.js</strong>. My journey has taken me through diverse projects, 
+              from **MVP startups** to **enterprise solutions**.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* React Router Navigation */}
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -26,10 +46,13 @@ function App() {
         </Routes>
       </Router>
 
-      <Footer/>
+      {/* Footer Section */}
+      <Footer />
     </div>
   );
 }
+
+/* Footer Component */
 const Footer = () => {
   return (
     <footer className="footer">
@@ -43,14 +66,15 @@ const Footer = () => {
           </a>
         </div>
         <div className="footer-right">
-          <p>Follow my work on:
-          <a href="https://github.com/Royniel" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-github footer-icon"></i>
-          </a>
-          <a href="https://www.linkedin.com/in/nilanjan-roy-619535147/" target="_blank" rel="noopener noreferrer">
-            <i className="fab fa-linkedin footer-icon"></i>
-          </a>
-          </p>
+          <p>Follow my work on:</p>
+          <div className="social-icons">
+            <a href="https://github.com/Royniel" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-github footer-icon"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/nilanjan-roy-619535147/" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-linkedin footer-icon"></i>
+            </a>
+          </div>
         </div>
       </div>
     </footer>

@@ -1,107 +1,88 @@
+/* Global Styles */
 body {
   margin: 0;
   font-family: Arial, sans-serif;
-  background-color: black; /* Set background color to black */
-  color: white; /* Set font color to white */
+  background-color: black;
+  color: white;
 }
 
 .App {
   text-align: center;
 }
 
-h2 {
-  margin-top: 2rem;
-  font-size: 2.5rem;
-  text-transform: uppercase;
-  color: #f4f4f4;
-}
-
-/* Banner Section */
+/* Full-Screen Banner */
 .banner {
   position: relative;
-  background-image: url('./assets/background.png'); /* Path to your image */
-  background-size: cover; /* Ensure the image covers the section */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent tiling */
-  height: 50vh; /* Set the height of the banner */
+  background-image: url('./assets/background.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  color: white;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
-}
-
-.banner h1 {
-  font-size: 3rem;
-  animation: fadeIn 2s ease-in-out; /* Fade-in effect */
-}
-
-/* Fade-in animation */
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-
-/* Carousel container */
-.carousel-container {
-  position: relative;
-  max-width: 800px;
-  margin: 2rem auto;
-  overflow: hidden;
-}
-
-/* Carousel slide */
-.carousel-slide img {
-  width: 100%;
-  border-radius: 10px;
-}
-
-.carousel-caption {
-  position: absolute;
-  bottom: 15px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.5);
-  color: white;
-  padding: 10px 20px;
-  border-radius: 5px;
   text-align: center;
 }
 
-/* Carousel buttons */
-.carousel-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background: rgba(255, 255, 255, 0.5);
-  color: black;
-  border: none;
-  font-size: 2rem;
-  cursor: pointer;
-  padding: 0.5rem 1rem;
-  border-radius: 50%;
-  outline: none;
-  z-index: 1;
+.banner-content h1 {
+  font-size: 4rem;
+  color: white;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
+  animation: fadeIn 2s ease-in-out;
 }
 
-.carousel-button:hover {
-  background: rgba(255, 255, 255, 0.8);
+/* About Me Section */
+.about-me {
+  background-color: #121212;
+  color: white;
+  padding: 5rem 10%;
 }
 
-.carousel-button.left {
-  left: 10px;
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.carousel-button.right {
-  right: 10px;
+.about-image img {
+  max-width: 350px;
+  border-radius: 10px;
 }
 
-/* Footer styles */
+.about-text {
+  flex: 1;
+  padding-left: 3rem;
+}
+
+.about-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.about-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+/* Footer Styles */
 .footer {
   background: linear-gradient(to right, #141e30, #243b55);
   color: white;
@@ -141,10 +122,15 @@ h2 {
   color: #00e676;
 }
 
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
 .footer-icon {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #FFD700;
-  margin: 0 0.5rem;
   transition: transform 0.3s ease;
 }
 
@@ -159,4 +145,3 @@ h2 {
     flex-direction: column;
   }
 }
-
