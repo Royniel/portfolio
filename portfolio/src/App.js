@@ -7,13 +7,20 @@ import Project3 from './pages/Project3';
 import Project4 from './pages/Project4';
 import Project5 from './pages/Project5';
 
+// Import Video
+import backgroundVideo from './assets/background.mp4'; // Ensure video is inside assets
+
 function App() {
   return (
     <div className="App">
-      {/* Full-Screen Banner Section */}
+      {/* Full-Screen Banner Section with Video */}
       <div className="banner">
+        <video autoPlay loop muted className="banner-video">
+          <source src={backgroundVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
         <div className="banner-content">
-          <h1>"Crafting Code, Engineering Dreams."</h1>
+          <h1 className="fade-in-text">"Crafting Code, Engineering Dreams."</h1>
         </div>
       </div>
 

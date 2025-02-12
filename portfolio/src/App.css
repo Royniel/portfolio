@@ -13,22 +13,33 @@ body {
 /* Full-Screen Banner */
 .banner {
   position: relative;
-  background-image: url('./assets/background.png');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  width: 100%;
   height: 100vh;
+  overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
 }
 
+/* Background Video */
+.banner-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Banner Text Animation */
 .banner-content h1 {
   font-size: 4rem;
   color: white;
   text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
-  animation: fadeIn 2s ease-in-out;
+  opacity: 0;
+  animation: fadeIn 2s ease-in-out 1s forwards; /* Delayed fade-in */
 }
 
 /* About Me Section */
@@ -77,6 +88,7 @@ body {
   }
 }
 
+/* Fade-in Animation */
 @keyframes fadeIn {
   0% { opacity: 0; }
   100% { opacity: 1; }

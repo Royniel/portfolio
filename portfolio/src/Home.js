@@ -50,11 +50,7 @@ const Home = () => {
 
   return (
     <div className="home-container">
-      {/* Background Video */}
-      <video autoPlay loop muted className="background-video">
-        <source src={backgroundVideo} type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+     
 
       {/* Content Section */}
       <div className="content">
