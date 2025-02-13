@@ -28,7 +28,7 @@ function App() {
       <section className="about-me">
         <div className="about-container">
           <div className="about-image">
-            <img src="./assets/profile.png" alt="Nilanjan Roy" />
+            <img src="./assets/my.jpg" alt="Nilanjan Roy" />
           </div>
           <div className="about-text">
             <h2>About Me</h2>
