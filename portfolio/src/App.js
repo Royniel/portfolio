@@ -6,6 +6,8 @@ import Project2 from './pages/Project2';
 import Project3 from './pages/Project3';
 import Project4 from './pages/Project4';
 import Project5 from './pages/Project5';
+import myImage from './assets/my.jpg';
+
 
 // Import Video
 import backgroundVideo from './assets/background.mp4'; // Ensure video is inside assets
@@ -28,7 +30,7 @@ function App() {
       <section className="about-me">
         <div className="about-container">
           <div className="about-image">
-            <img src="./assets/my.jpg" alt="Nilanjan Roy" />
+            <img src={myImage} alt="Nilanjan Roy" />
           </div>
           <div className="about-text">
             <h2>About Me</h2>
