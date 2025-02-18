@@ -39,7 +39,7 @@ body {
   color: white;
   text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.8);
   opacity: 0;
-  animation: fadeIn 2s ease-in-out 1s forwards; /* Delayed fade-in */
+  animation: fadeIn 2s ease-in-out 1s forwards;
 }
 
 /* About Me Section */
@@ -155,5 +155,122 @@ body {
 @media (max-width: 768px) {
   .footer-container {
     flex-direction: column;
+  }
+}
+
+/* Carousel Section */
+.carousel-section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+/* Work Experience - Text on Right */
+.work-experience {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.right-text {
+  text-align: left;
+  margin-left: 20px;
+  max-width: 400px;
+}
+
+/* Projects - Text on Left */
+.projects {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.left-text {
+  text-align: right;
+  margin-right: 20px;
+  max-width: 400px;
+}
+
+/* Carousel Image */
+.carousel-slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Carousel Captions */
+.carousel-caption {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+/* 🔥 Navigation Buttons - Move Inside Slides */
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent !important;
+  color: white !important;
+  transition: all 0.3s ease-in-out;
+  font-size: 2rem !important;
+  border-radius: 50%;
+  padding: 8px;
+}
+
+/* 🔹 Left Button */
+.nav-button.left {
+  left: 10px;
+}
+
+/* 🔹 Right Button */
+.nav-button.right {
+  right: 10px;
+}
+
+/* 🔥 Button Hover Effect */
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .carousel-container {
+    flex-direction: column !important;
+  }
+
+  .right-text, .left-text {
+    text-align: center;
+    margin: 10px 0;
+    max-width: 100%;
+  }
+
+  .work-experience, .projects {
+    flex-direction: column;
+    text-align: center;
   }
 }

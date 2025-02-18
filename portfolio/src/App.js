@@ -1,5 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Home from './Home';
 import Project1 from './pages/Project1';
 import Project2 from './pages/Project2';
@@ -7,57 +8,58 @@ import Project3 from './pages/Project3';
 import Project4 from './pages/Project4';
 import Project5 from './pages/Project5';
 import myImage from './assets/my.jpg';
+import backgroundVideo from './assets/background.mp4';
 
-
-// Import Video
-import backgroundVideo from './assets/background.mp4'; // Ensure video is inside assets
+const theme = createTheme();
 
 function App() {
   return (
-    <div className="App">
-      {/* Full-Screen Banner Section with Video */}
-      <div className="banner">
-        <video autoPlay loop muted className="banner-video">
-          <source src={backgroundVideo} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div className="banner-content">
-          <h1 className="fade-in-text">"Crafting Code, Engineering Dreams."</h1>
-        </div>
-      </div>
-
-      {/* About Me Section */}
-      <section className="about-me">
-        <div className="about-container">
-          <div className="about-image">
-            <img src={myImage} alt="Nilanjan Roy" />
-          </div>
-          <div className="about-text">
-            <h2>About Me</h2>
-            <p>
-              Hi, I'm <strong>Nilanjan Roy</strong>, a passionate Web Developer who specializes in creating elegant, efficient, and scalable applications.
-              I have extensive experience in <strong>MongoDB, Express.js, React, and Node.js</strong>. My journey has taken me through diverse projects, 
-              from **MVP startups** to **enterprise solutions**.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* React Router Navigation */}
+    <ThemeProvider theme={theme}>
       <Router>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/project1" element={<Project1 />} />
-          <Route path="/project2" element={<Project2 />} />
-          <Route path="/project3" element={<Project3 />} />
-          <Route path="/project4" element={<Project4 />} />
-          <Route path="/project5" element={<Project5 />} />
-        </Routes>
-      </Router>
+        <div className="App">
+          {/* Full-Screen Banner Section with Video */}
+          <div className="banner">
+            <video autoPlay loop muted className="banner-video">
+              <source src={backgroundVideo} type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+            <div className="banner-content">
+              <h1 className="fade-in-text">"Crafting Code, Engineering Dreams."</h1>
+            </div>
+          </div>
 
-      {/* Footer Section */}
-      <Footer />
-    </div>
+          {/* About Me Section */}
+          <section className="about-me">
+            <div className="about-container">
+              <div className="about-image">
+                <img src={myImage} alt="Nilanjan Roy" />
+              </div>
+              <div className="about-text">
+                <h2>About Me</h2>
+                <p>
+                  Hi, I'm <strong>Nilanjan Roy</strong>, a passionate Web Developer who specializes in creating elegant, efficient, and scalable applications.
+                  I have extensive experience in <strong>MongoDB, Express.js, React, and Node.js</strong>. My journey has taken me through diverse projects, 
+                  from **MVP startups** to **enterprise solutions**.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          {/* React Router Navigation */}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/project1" element={<Project1 />} />
+            <Route path="/project2" element={<Project2 />} />
+            <Route path="/project3" element={<Project3 />} />
+            <Route path="/project4" element={<Project4 />} />
+            <Route path="/project5" element={<Project5 />} />
+          </Routes>
+
+          {/* Footer Section */}
+          <Footer />
+        </div>
+      </Router>
+    </ThemeProvider>
   );
 }
 
