@@ -37,8 +37,8 @@ function App() {
               <div className="about-text">
                 <h2>About Me</h2>
                 <p>
-                  Hi, I'm <strong>Nilanjan Roy</strong>, a passionate Web Developer who specializes in creating elegant, efficient, and scalable applications.
-                  I have extensive experience in <strong>MongoDB, Express.js, React, and Node.js</strong>. My journey has taken me through diverse projects, 
+                  Hi, this is <strong>Nilanjan Roy</strong>, a passionate Full Stack Developer who specializes in creating elegant, efficient, and scalable applications.
+                  I have extensive experience in <strong>Java, JavaScript, Python,Springboot, Hibernate, MongoDB, Express.js, React, and Node.js. I am also currently unveiling the mysteries of Gen AI Development.</strong>. My journey has taken me through diverse projects, 
                   from **MVP startups** to **enterprise solutions**.
                 </p>
               </div>
