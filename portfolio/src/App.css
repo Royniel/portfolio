@@ -229,7 +229,7 @@ body {
   line-height: 1.5;
 }
 
-/* 🔥 Navigation Buttons - Move Inside Slides */
+/* Navigation Buttons - Move Inside Slides */
 .nav-button {
   position: absolute;
   top: 50%;
@@ -240,19 +240,20 @@ body {
   font-size: 2rem !important;
   border-radius: 50%;
   padding: 8px;
+  z-index: 10;
 }
 
-/* 🔹 Left Button */
+/* Left Button */
 .nav-button.left {
   left: 10px;
 }
 
-/* 🔹 Right Button */
+/* Right Button */
 .nav-button.right {
   right: 10px;
 }
 
-/* 🔥 Button Hover Effect */
+/* Button Hover Effect */
 .nav-button:hover {
   background-color: rgba(255, 255, 255, 0.2) !important;
 }

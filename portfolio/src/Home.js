@@ -78,10 +78,10 @@ const Home = () => {
           </div>
           <div className="carousel-slide" onClick={() => navigate(projectSlides[projIndex].link)} style={{ cursor: 'pointer' }}>
             <img src={projectSlides[projIndex].image} alt={projectSlides[projIndex].title} />
-            <IconButton className="nav-button left" onClick={() => setProjIndex((projIndex - 1 + projectSlides.length) % projectSlides.length)}>
+            <IconButton className="nav-button left" onClick={(e) => { e.stopPropagation(); setProjIndex((projIndex - 1 + projectSlides.length) % projectSlides.length); }}>
               <ArrowBackIos />
             </IconButton>
-            <IconButton className="nav-button right" onClick={() => setProjIndex((projIndex + 1) % projectSlides.length)}>
+            <IconButton className="nav-button right" onClick={(e) => { e.stopPropagation(); setProjIndex((projIndex + 1) % projectSlides.length); }}>
               <ArrowForwardIos />
             </IconButton>
           </div>

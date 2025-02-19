@@ -1,11 +1,11 @@
-const Project1 = () => {
+const project1 = () => {
     return (
       <div>
-        <h1>Project 1: Pathfinder Project</h1>
-        <p>Details about the Java Springboot Hibernate...</p>
+        <h1>Project 1: Hospital administration Project</h1>
+        <p>Details about the Java Netbeans Project...</p>
       </div>
     );
   };
   
-  export default Project1;
+  export default project1;
   
