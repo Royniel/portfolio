@@ -72,10 +72,6 @@ const Home = () => {
       <div className="carousel-section">
         <h2>Projects</h2>
         <div className="carousel-container projects">
-          <div className="carousel-caption left-text">
-            <h3>{projectSlides[projIndex].title}</h3>
-            <p>{projectSlides[projIndex].description}</p>
-          </div>
           <div className="carousel-slide" onClick={() => navigate(projectSlides[projIndex].link)} style={{ cursor: 'pointer' }}>
             <img src={projectSlides[projIndex].image} alt={projectSlides[projIndex].title} />
             <IconButton className="nav-button left" onClick={(e) => { e.stopPropagation(); setProjIndex((projIndex - 1 + projectSlides.length) % projectSlides.length); }}>
@@ -84,6 +80,10 @@ const Home = () => {
             <IconButton className="nav-button right" onClick={(e) => { e.stopPropagation(); setProjIndex((projIndex + 1) % projectSlides.length); }}>
               <ArrowForwardIos />
             </IconButton>
+          </div>
+          <div className="carousel-caption left-text">
+            <h3>{projectSlides[projIndex].title}</h3>
+            <p>{projectSlides[projIndex].description}</p>
           </div>
         </div>
       </div>

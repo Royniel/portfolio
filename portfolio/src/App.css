@@ -213,6 +213,7 @@ body {
   position: relative;
   width: 100%;
   max-width: 500px;
+  overflow: hidden; /* Ensure buttons stay within the slide */
 }
 
 .carousel-slide img {
@@ -221,12 +222,6 @@ body {
   object-fit: cover;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-}
-
-/* Carousel Captions */
-.carousel-caption {
-  font-size: 1rem;
-  line-height: 1.5;
 }
 
 /* Navigation Buttons - Move Inside Slides */
