@@ -24,7 +24,8 @@ function App() {
               Your browser does not support the video tag.
             </video>
             <div className="banner-content">
-              <h1 className="fade-in-text">"Crafting Code, Engineering Dreams."</h1>
+            <h1 className="fade-in-text">"Welcome to my journey of Crafting Code and Engineering Dreams"</h1>
+              <h1 className="fade-in-text">"this is Nilanjan Roy"</h1>
             </div>
           </div>
 
