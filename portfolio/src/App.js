@@ -8,7 +8,7 @@ import Project3 from './pages/Project3';
 import Project4 from './pages/Project4';
 import Project5 from './pages/Project5';
 import myImage from './assets/my.jpg';
-import backgroundVideo from './assets/background.mp4';
+import backgroundVideo from './assets/back.mp4';
 
 const theme = createTheme();
 
@@ -24,8 +24,8 @@ function App() {
               Your browser does not support the video tag.
             </video>
             <div className="banner-content">
-            <h1 className="fade-in-text">"Welcome to my journey of Crafting Code and Engineering Dreams"</h1>
-              <h1 className="fade-in-text">"this is Nilanjan Roy"</h1>
+            <h1 className="fade-in-text">"Debugger of Bugs. Deployer of Dreams."</h1>
+              
             </div>
           </div>
 
