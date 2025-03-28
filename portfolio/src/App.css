@@ -19,10 +19,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
 }
 
-/* Background Video */
 .banner-video {
   position: absolute;
   top: 0;
@@ -33,7 +31,6 @@ body {
   z-index: -1;
 }
 
-/* Banner Text Animation */
 .banner-content h1 {
   font-size: 4rem;
   color: white;
@@ -42,17 +39,23 @@ body {
   animation: fadeIn 2s ease-in-out 1s forwards;
 }
 
-/* About Me Section */
-.about-me {
-  background-color: #121212;
-  color: white;
-  padding: 5rem 10%;
+/* Section Box */
+.section-box {
+  background-color: #272525;
+  margin: 1rem auto;
+  padding: 2rem;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 1400px;
+  box-shadow: 0 4px 12px rgba(205, 139, 243, 0.6);
 }
 
+/* About Me */
 .about-container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .about-image img {
@@ -73,37 +76,76 @@ body {
 .about-text p {
   font-size: 1.2rem;
   line-height: 1.6;
+  text-align: left;
 }
 
-/* Responsive Design */
-@media (max-width: 1024px) {
-  .about-container {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .about-text {
-    padding-left: 0;
-    margin-top: 2rem;
-  }
+/* Carousel Section */
+.carousel-section {
+  text-align: center;
 }
 
-/* Fade-in Animation */
-@keyframes fadeIn {
-  0% { opacity: 0; }
-  100% { opacity: 1; }
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px;
+  width: 100%;
 }
 
-/* Footer Styles */
+.carousel-slide {
+  flex: 1;
+  max-width: 600px;
+  position: relative;
+}
+
+.carousel-slide img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+/* Caption Text */
+.right-text,
+.left-text {
+  flex: 1;
+  text-align: center;
+  max-width: 400px;
+}
+
+/* Navigation Buttons */
+.nav-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: transparent !important;
+  color: white !important;
+  font-size: 2rem !important;
+  border-radius: 50%;
+  padding: 8px;
+  z-index: 10;
+}
+
+.nav-button.left {
+  left: -40px;
+}
+
+.nav-button.right {
+  right: -40px;
+}
+
+.nav-button:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+/* Footer */
 .footer {
   background: linear-gradient(to right, #141e30, #243b55);
   color: white;
   padding: 2rem 0;
   text-align: center;
-  font-family: 'Poppins', sans-serif;
-  position: relative;
-  bottom: 0;
-  width: 100%;
 }
 
 .footer-container {
@@ -116,7 +158,9 @@ body {
   padding: 0 2rem;
 }
 
-.footer-left, .footer-center, .footer-right {
+.footer-left,
+.footer-center,
+.footer-right {
   flex: 1;
   text-align: center;
   margin-bottom: 1rem;
@@ -151,123 +195,32 @@ body {
   color: #00e676;
 }
 
-/* Responsive Footer */
-@media (max-width: 768px) {
-  .footer-container {
-    flex-direction: column;
-  }
+/* Animation */
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
 }
 
-/* Carousel Section */
-.carousel-section {
-  text-align: center;
-  margin: 40px 0;
-}
-
-/* Carousel Layout */
-.carousel-container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 80%;
-  margin: auto;
-  gap: 40px;
-}
-
-/* Work Experience - Text on Right */
-.work-experience {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Projects - Text on Left */
-.projects {
-  display: flex;
-  flex-direction: row-reverse;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Center Align the Text */
-.right-text,
-.left-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  text-align: center;
-  max-width: 400px;
-}
-
-/* Carousel Image */
-.carousel-slide {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  position: relative;
-  width: 100%;
-  max-width: 500px;
-  overflow: hidden;
-}
-
-.carousel-slide img {
-  width: 100%;
-  height: 300px;
-  object-fit: cover;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
-}
-
-/* Navigation Buttons - Move Inside Slides */
-.nav-button {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: transparent !important;
-  color: white !important;
-  transition: all 0.3s ease-in-out;
-  font-size: 2rem !important;
-  border-radius: 50%;
-  padding: 8px;
-  z-index: 10;
-}
-
-/* Left Button */
-.nav-button.left {
-  left: -40px;
-}
-
-/* Right Button */
-.nav-button.right {
-  right: -40px;
-}
-
-/* Button Hover Effect */
-.nav-button:hover {
-  background-color: rgba(255, 255, 255, 0.2) !important;
-}
-
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 1024px) {
+  .about-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .about-text {
+    padding-left: 0;
+    margin-top: 2rem;
+  }
+
   .carousel-container {
     flex-direction: column;
   }
 
-  .work-experience,
-  .projects {
-    flex-direction: column;
-    text-align: center;
-  }
-
   .right-text,
   .left-text {
-    text-align: center;
-    margin: 10px 0;
     max-width: 100%;
+    margin: 10px 0;
   }
 
   .nav-button.left {
@@ -276,5 +229,9 @@ body {
 
   .nav-button.right {
     right: 5px;
+  }
+
+  .footer-container {
+    flex-direction: column;
   }
 }

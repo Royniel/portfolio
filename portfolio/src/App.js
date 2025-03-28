@@ -24,13 +24,13 @@ function App() {
               Your browser does not support the video tag.
             </video>
             <div className="banner-content">
-            <h1 className="fade-in-text">"Debugger of Bugs. Deployer of Dreams."</h1>
+            <h1 className="fade-in-text">"Welcome to my coding journey."</h1>
               
             </div>
           </div>
 
           {/* About Me Section */}
-          <section className="about-me">
+          <section className="about-me section-box">
             <div className="about-container">
               <div className="about-image">
                 <img src={myImage} alt="Nilanjan Roy" />
