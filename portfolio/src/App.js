@@ -23,6 +23,7 @@ function App() {
               <source src={backgroundVideo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
+            <div className="banner-overlay"></div>
             <div className="banner-content">
             <h1 className="fade-in-text">"Welcome to my coding journey."</h1>
               
