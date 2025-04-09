@@ -17,49 +17,53 @@ function App() {
     <ThemeProvider theme={theme}>
       <Router>
         <div className="App">
-          {/* Full-Screen Banner Section with Video */}
-          <div className="banner">
-            <video autoPlay loop muted className="banner-video">
+          {/* Fixed Video Background */}
+          <div className="video-background">
+            <video autoPlay loop muted className="video-content">
               <source src={backgroundVideo} type="video/mp4" />
               Your browser does not support the video tag.
             </video>
-            <div className="banner-overlay"></div>
-            <div className="banner-content">
-            <h1 className="fade-in-text">"Welcome to my coding journey."</h1>
-              
-            </div>
+            <div className="video-overlay"></div>
           </div>
 
-          {/* About Me Section */}
-          <section className="about-me section-box">
-            <div className="about-container">
-              <div className="about-image">
-                <img src={myImage} alt="Nilanjan Roy" />
-              </div>
-              <div className="about-text">
-                <h2>About Me</h2>
-                <p>
-                  Hi, this is <strong>Nilanjan Roy</strong>, a passionate Full Stack Developer who specializes in creating elegant, efficient, and scalable applications.
-                  I have extensive experience in <strong>Java, JavaScript, Python, Springboot, Hibernate, MongoDB, Express.js, React, and Node.js. 
-                  I am also currently unveiling the mysteries of Gen AI Development.</strong>. My journey has taken me through diverse projects, 
-                  from **MVP startups** to **enterprise solutions**.
-                </p>
-              </div>
+          {/* Scrollable Content */}
+          <div className="page-content">
+            {/* Banner Content */}
+            <div className="banner-content">
+              <h1 className="fade-in-text">"Debugger of Bugs. Deployer of Dreams."</h1>
             </div>
-          </section>
 
-          {/* React Router Navigation */}
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/project1" element={<Project1 />} />
-            <Route path="/project2" element={<Project2 />} />
-            <Route path="/project3" element={<Project3 />} />
-            <Route path="/project4" element={<Project4 />} />
-            <Route path="/project5" element={<Project5 />} />
-          </Routes>
+            {/* About Me Section */}
+            <section className="about-me section-box">
+              <div className="about-container">
+                <div className="about-image">
+                  <img src={myImage} alt="Nilanjan Roy" />
+                </div>
+                <div className="about-text">
+                  <h2>About Me</h2>
+                  <p>
+                    Hi, this is <strong>Nilanjan Roy</strong>, a passionate Full Stack Developer who specializes in creating elegant, efficient, and scalable applications.
+                    I have extensive experience in <strong>Java, JavaScript, Python, Springboot, Hibernate, MongoDB, Express.js, React, and Node.js. 
+                    I am also currently unveiling the mysteries of Gen AI Development.</strong> My journey has taken me through diverse projects, 
+                    from <strong>MVP startups</strong> to <strong>enterprise solutions</strong>.
+                  </p>
+                </div>
+              </div>
+            </section>
 
-          {/* Footer Section */}
-          <Footer />
+            {/* React Router Navigation */}
+            <Routes>
+              
+              <Route path="/project1" element={<Project1 />} />
+              <Route path="/project2" element={<Project2 />} />
+              <Route path="/project3" element={<Project3 />} />
+              <Route path="/project4" element={<Project4 />} />
+              <Route path="/project5" element={<Project5 />} />
+            </Routes>
+            <Home />
+            {/* Footer Section */}
+            <Footer />
+          </div>
         </div>
       </Router>
     </ThemeProvider>
