@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.9893c229.css",
+    "main.js": "/portfolio/static/js/main.52ac2d40.js",
+    "static/js/488.9561f9b8.chunk.js": "/portfolio/static/js/488.9561f9b8.chunk.js",
+    "static/media/back.mp4": "/portfolio/static/media/back.855c33f6dfa285c37779.mp4",
+    "static/media/hospital.png": "/portfolio/static/media/hospital.76013ce37706839171b8.png",
+    "static/media/my.jpg": "/portfolio/static/media/my.baec2627877c2c4dd552.jpg",
+    "static/media/pathfinder.png": "/portfolio/static/media/pathfinder.18ceece9d9f2ad0267f1.png",
+    "static/media/restromanager.png": "/portfolio/static/media/restromanager.18ceece9d9f2ad0267f1.png",
+    "static/media/stockoptimate.png": "/portfolio/static/media/stockoptimate.18ceece9d9f2ad0267f1.png",
+    "static/media/wiskerwags.png": "/portfolio/static/media/wiskerwags.18ceece9d9f2ad0267f1.png",
+    "static/media/velozi.webp": "/portfolio/static/media/velozi.566fabe7af3b8b4af454.webp",
+    "static/media/mastech.webp": "/portfolio/static/media/mastech.28be32149be55b540ad7.webp",
+    "static/media/cynet.avif": "/portfolio/static/media/cynet.0cae873bd03c3b7fbd2c.avif",
+    "index.html": "/portfolio/index.html",
+    "main.9893c229.css.map": "/portfolio/static/css/main.9893c229.css.map",
+    "main.52ac2d40.js.map": "/portfolio/static/js/main.52ac2d40.js.map",
+    "488.9561f9b8.chunk.js.map": "/portfolio/static/js/488.9561f9b8.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9893c229.css",
+    "static/js/main.52ac2d40.js"
+  ]
+}
