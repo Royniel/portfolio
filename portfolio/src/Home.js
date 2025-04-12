@@ -47,7 +47,7 @@ const Home = () => {
   }, []);
 
   return (
-    <><div className="section-box">
+    <><div id ="work" className="section-box">
       {/* Work Experience Section */}
       <div className="carousel-section">
         <h2>Work Experience</h2>
@@ -70,7 +70,7 @@ const Home = () => {
     </div>
 
     {/* Projects Section */}
-      <div className="section-box">
+      <div id ="projects" className="section-box">
         <div className="carousel-section">
           <h2>Projects</h2>
           <div className="carousel-container projects">

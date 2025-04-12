@@ -1,6 +1,5 @@
 import './App.css';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Home from './Home';
 import Project1 from './pages/Project1';
@@ -29,13 +28,14 @@ function App() {
 
           {/* Scrollable Content */}
           <div className="page-content">
+          <Navbar />
             {/* Banner Content */}
             <div className="banner-content">
               <h1 className="fade-in-text">"Debugger of Bugs. Deployer of Dreams."</h1>
             </div>
 
             {/* About Me Section */}
-            <section className="about-me section-box">
+            <section id ="about" className="about-me section-box">
               <div className="about-container">
                 <div className="about-image">
                   <img src={myImage} alt="Nilanjan Roy" />
@@ -99,5 +99,18 @@ const Footer = () => {
     </footer>
   );
 };
+
+const Navbar = () => {
+  return (
+    <nav className="navbar">
+      <ul className="nav-links">
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#work">Work Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+      </ul>
+    </nav>
+  );
+};
+
 
 export default App;
