@@ -9,6 +9,7 @@ import Project4 from './pages/Project4';
 import Project5 from './pages/Project5';
 import myImage from './assets/my.jpg';
 import backgroundVideo from './assets/back.mp4';
+import Header from './Header';
 
 const theme = createTheme();
 
@@ -28,7 +29,8 @@ function App() {
 
           {/* Scrollable Content */}
           <div className="page-content">
-          <Navbar />
+          <Header />
+         
             {/* Banner Content */}
             <div className="banner-content">
               <h1 className="fade-in-text">"Debugger of Bugs. Deployer of Dreams."</h1>
@@ -100,17 +102,7 @@ const Footer = () => {
   );
 };
 
-const Navbar = () => {
-  return (
-    <nav className="navbar">
-      <ul className="nav-links">
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#work">Work Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-      </ul>
-    </nav>
-  );
-};
+
 
 
 export default App;

@@ -12,6 +12,13 @@ body {
   overflow-x: hidden;
 }
 
+.navbar a {
+  margin: 0 15px;
+  color: white;
+  text-decoration: none;
+}
+
+
 .App {
   text-align: center;
   position: relative;
