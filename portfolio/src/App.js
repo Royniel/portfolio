@@ -33,7 +33,7 @@ function App() {
          
             {/* Banner Content */}
             <div className="banner-content">
-              <h1 className="fade-in-text">"Welcome to my Engineering Journey."</h1>
+              <h1 className="fade-in-text">"Welcome to My Engineering Journey."</h1>
             </div>
 
             {/* About Me Section */}
@@ -84,6 +84,9 @@ const Footer = () => {
         <div className="footer-center">
           <a href="mailto:roy.nil@northeastern.edu" className="footer-link">
             <i className="fas fa-envelope"></i> roy.nil@northeastern.edu
+          </a>
+          <a href="mailto:royniel08@gmail.com" className="footer-link">
+            <i className="fas fa-envelope"></i> royniel08@gmail.com
           </a>
         </div>
         <div className="footer-right">

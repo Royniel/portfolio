@@ -5,7 +5,6 @@ import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material';
 import { FaJava, FaPython, FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa';
 import { SiC, SiCplusplus, SiMysql, SiMongodb, SiJavascript } from 'react-icons/si';
 
-
 // Importing images for work experience and projects
 import experience1Image from './assets/velozi.webp';
 import experience2Image from './assets/cynet.avif';
@@ -22,6 +21,7 @@ const Home = () => {
   const [projIndex, setProjIndex] = useState(0);
 
   const experienceSlides = [
+    {image: experience1Image, title: 'Vertige - Fullstack Application Developer', description: 'Spearheaded the entire Android application development for Vertige, using React Native, typescript, Firebase cloud and databases.'},
     { image: experience1Image, title: 'Velozy - Frontend Developer', description: 'Refined the Velozy app using React Native with Expo, improved UX/UI and reduced app crashes by 15%.' },
     { image: experience2Image, title: 'Cynet Systems - Software Developer', description: 'Built a candidate data processing system with Spring Boot, Hibernate and MongoDB, reducing retrieval latency by 20%.' },
     { image: experience3Image, title: 'Mastech Digital - Software Developer', description: 'Developed full-stack system with Node.js, Spring Boot, and PostgreSQL, optimizing processing time by 20%.' },
