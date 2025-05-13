@@ -2,6 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { IconButton } from '@mui/material';
 import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material';
+import { FaJava, FaPython, FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa';
+import { SiC, SiCplusplus, SiMysql, SiMongodb, SiJavascript } from 'react-icons/si';
+
 
 // Importing images for work experience and projects
 import experience1Image from './assets/velozi.webp';
@@ -47,7 +50,26 @@ const Home = () => {
   }, []);
 
   return (
-    <><div id ="work" className="section-box">
+
+    <><div id="skills" className="section-box">
+      <div className="skills-section">
+        <h2>Technical Skills</h2>
+        <div className="skills-icons">
+          <FaJava title="Java" size={40} />
+          <FaPython title="Python" size={40} />
+          <SiC title="C" size={40} />
+          <SiCplusplus title="C++" size={40} />
+          <FaDatabase title="SQL" size={40} />
+          <SiMysql title="MySQL" size={40} />
+          <SiMongodb title="MongoDB" size={40} />
+          <SiJavascript title="JavaScript" size={40} />
+          <FaReact title="React" size={40} />
+          <FaNodeJs title="Node.js" size={40} />
+        </div>
+      </div>
+    </div><>
+    
+    <div id="work" className="section-box">
       {/* Work Experience Section */}
       <div className="carousel-section">
         <h2>Work Experience</h2>
@@ -69,27 +91,27 @@ const Home = () => {
       </div>
     </div>
 
-    {/* Projects Section */}
-      <div id ="projects" className="section-box">
-        <div className="carousel-section">
-          <h2>Projects</h2>
-          <div className="carousel-container projects">
-            <div className="carousel-slide" onClick={() => navigate(projectSlides[projIndex].link)} style={{ cursor: 'pointer' }}>
-              <img src={projectSlides[projIndex].image} alt={projectSlides[projIndex].title} />
-              <IconButton className="nav-button left" onClick={(e) => { e.stopPropagation(); setProjIndex((projIndex - 1 + projectSlides.length) % projectSlides.length); } }>
-                <ArrowBackIos />
-              </IconButton>
-              <IconButton className="nav-button right" onClick={(e) => { e.stopPropagation(); setProjIndex((projIndex + 1) % projectSlides.length); } }>
-                <ArrowForwardIos />
-              </IconButton>
-            </div>
-            <div className="carousel-caption left-text">
-              <h3>{projectSlides[projIndex].title}</h3>
-              <p>{projectSlides[projIndex].description}</p>
+        {/* Projects Section */}
+        <div id="projects" className="section-box">
+          <div className="carousel-section">
+            <h2>Projects</h2>
+            <div className="carousel-container projects">
+              <div className="carousel-slide" onClick={() => navigate(projectSlides[projIndex].link)} style={{ cursor: 'pointer' }}>
+                <img src={projectSlides[projIndex].image} alt={projectSlides[projIndex].title} />
+                <IconButton className="nav-button left" onClick={(e) => { e.stopPropagation(); setProjIndex((projIndex - 1 + projectSlides.length) % projectSlides.length); } }>
+                  <ArrowBackIos />
+                </IconButton>
+                <IconButton className="nav-button right" onClick={(e) => { e.stopPropagation(); setProjIndex((projIndex + 1) % projectSlides.length); } }>
+                  <ArrowForwardIos />
+                </IconButton>
+              </div>
+              <div className="carousel-caption left-text">
+                <h3>{projectSlides[projIndex].title}</h3>
+                <p>{projectSlides[projIndex].description}</p>
+              </div>
             </div>
           </div>
-        </div>
-      </div></>
+        </div></></>
   );
 };
 

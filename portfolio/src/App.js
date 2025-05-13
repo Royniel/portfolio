@@ -33,7 +33,7 @@ function App() {
          
             {/* Banner Content */}
             <div className="banner-content">
-              <h1 className="fade-in-text">"Debugger of Bugs. Deployer of Dreams."</h1>
+              <h1 className="fade-in-text">"Welcome to my Engineering Journey."</h1>
             </div>
 
             {/* About Me Section */}

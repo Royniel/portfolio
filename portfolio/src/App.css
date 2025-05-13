@@ -318,3 +318,26 @@ body {
   scroll-behavior: smooth;
 }
 
+.skills-section {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.skills-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 20px;
+}
+
+.skills-icons svg {
+  color: #fff;
+  transition: transform 0.3s ease;
+}
+
+.skills-icons svg:hover {
+  transform: scale(1.2);
+}
+
+
