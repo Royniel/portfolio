@@ -40,14 +40,14 @@ const Home = () => {
       setExpIndex((prev) => (prev + 1) % experienceSlides.length);
     }, 3000);
     return () => clearInterval(expTimer);
-  }, []);
-
+  }, [experienceSlides.length]); // ✅ add this
+  
   useEffect(() => {
     const projTimer = setInterval(() => {
       setProjIndex((prev) => (prev + 1) % projectSlides.length);
     }, 3000);
     return () => clearInterval(projTimer);
-  }, []);
+  }, [projectSlides.length]);
 
   return (
 
