@@ -2,8 +2,8 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { IconButton } from '@mui/material';
 import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material';
-import { FaJava, FaPython, FaReact, FaNodeJs, FaDatabase } from 'react-icons/fa';
-import { SiC, SiCplusplus, SiMysql, SiMongodb, SiJavascript } from 'react-icons/si';
+import { FaJava, FaPython, FaReact, FaNodeJs,  FaAws } from 'react-icons/fa';
+import { SiC, SiCplusplus, SiMysql, SiMongodb, SiJavascript, SiTypescript, SiSpringboot, SiHibernate, SiFirebase, SiPostgresql  } from 'react-icons/si';
 
 // Importing images for work experience and projects
 import experience1Image from './assets/velozi.webp';
@@ -59,12 +59,17 @@ const Home = () => {
           <FaPython title="Python" size={40} />
           <SiC title="C" size={40} />
           <SiCplusplus title="C++" size={40} />
-          <FaDatabase title="SQL" size={40} />
+          <SiPostgresql title="PostGresql" size={40} />
           <SiMysql title="MySQL" size={40} />
           <SiMongodb title="MongoDB" size={40} />
           <SiJavascript title="JavaScript" size={40} />
           <FaReact title="React" size={40} />
           <FaNodeJs title="Node.js" size={40} />
+          <FaAws title="Aws" size={40} />
+          <SiHibernate title="Hibernate" size={40} />
+          <SiSpringboot title="Springboot" size={40} />
+          <SiTypescript title="Typescript" size={40} />
+          <SiFirebase title="Firebase" size={40} />
         </div>
       </div>
     </div><>
