@@ -77,7 +77,7 @@ const Home = () => {
     <div id="work" className="section-box">
       {/* Work Experience Section */}
       <div className="carousel-section">
-        <h2>Work Experience</h2>
+        <h1>Work Experience</h1>
         <div className="carousel-container work-experience">
           <div className="carousel-slide">
             <img src={experienceSlides[expIndex].image} alt={experienceSlides[expIndex].title} />
@@ -99,7 +99,7 @@ const Home = () => {
         {/* Projects Section */}
         <div id="projects" className="section-box">
           <div className="carousel-section">
-            <h2>Projects</h2>
+            <h1>Projects</h1>
             <div className="carousel-container projects">
               <div className="carousel-slide" onClick={() => navigate(projectSlides[projIndex].link)} style={{ cursor: 'pointer' }}>
                 <img src={projectSlides[projIndex].image} alt={projectSlides[projIndex].title} />

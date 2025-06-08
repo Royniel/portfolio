@@ -84,7 +84,7 @@ const Footer = () => {
         <div className="footer-center">
           <a href="mailto:roy.nil@northeastern.edu" className="footer-link">
             <i className="fas fa-envelope"></i> roy.nil@northeastern.edu
-          </a>
+          </a><br></br>
           <a href="mailto:royniel08@gmail.com" className="footer-link">
             <i className="fas fa-envelope"></i> royniel08@gmail.com
           </a>
