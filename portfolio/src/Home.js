@@ -6,14 +6,16 @@ import { FaJava, FaPython, FaReact, FaNodeJs,  FaAws } from 'react-icons/fa';
 import { SiC, SiCplusplus, SiMysql, SiMongodb, SiJavascript, SiTypescript, SiSpringboot, SiHibernate, SiFirebase, SiPostgresql  } from 'react-icons/si';
 
 // Importing images for work experience and projects
-import experience1Image from './assets/velozi.webp';
-import experience2Image from './assets/cynet.avif';
-import experience3Image from './assets/mastech.webp';
-import pathfinderImage from './assets/pathfinder.png';
-import restroManagerImage from './assets/restromanager.png';
-import stockOptimateImage from './assets/stockoptimate.png';
-import hospitalImage from './assets/hospital.png';
-import whiskerwagsImage from './assets/wiskerwags.png';
+import experience1Image from './assets/Velozy.jpg';
+import experience2Image from './assets/Cynet_Logo.jpg';
+import experience3Image from './assets/Mastech_Digital_Logo.jpg';
+import experience4Image from './assets/Vertige-Logo.webp';
+import project1Image from './assets/stockoptimate.png';
+import project2Image from './assets/pathfinder.png';
+import project3Image from './assets/restromanager.png';
+import project4Image from './assets/hospital.png';
+import project5Image from './assets/wiskerwags.png';
+
 
 const Home = () => {
   const navigate = useNavigate();
@@ -21,18 +23,18 @@ const Home = () => {
   const [projIndex, setProjIndex] = useState(0);
 
   const experienceSlides = [
-    {image: experience1Image, title: 'Vertige - Fullstack Application Developer', description: 'Spearheaded the entire Android application development for Vertige, using React Native, typescript, Firebase cloud and databases.'},
+    {image: experience4Image, title: 'Vertige - Fullstack Application Developer', description: 'Spearheaded the entire Android application development for Vertige, using React Native, typescript, Firebase cloud and databases.'},
     { image: experience1Image, title: 'Velozy - Frontend Developer', description: 'Refined the Velozy app using React Native with Expo, improved UX/UI and reduced app crashes by 15%.' },
     { image: experience2Image, title: 'Cynet Systems - Software Developer', description: 'Built a candidate data processing system with Spring Boot, Hibernate and MongoDB, reducing retrieval latency by 20%.' },
     { image: experience3Image, title: 'Mastech Digital - Software Developer', description: 'Developed full-stack system with Node.js, Spring Boot, and PostgreSQL, optimizing processing time by 20%.' },
   ];
 
   const projectSlides = [
-    { image: pathfinderImage, title: 'Pathfinder', link: '/project1', description: 'Course selection web portal using Spring Boot and Hibernate.' },
-    { image: restroManagerImage, title: 'RestroManager', link: '/project2', description: 'Standalone restaurant management app using Java and SQL.' },
-    { image: stockOptimateImage, title: 'StockOptimate', link: '/project3', description: 'Stock management system with MSSQL, PowerBI, and Node.js.' },
-    { image: hospitalImage, title: 'Hospital Admin', link: '/project4', description: 'Standalone hospital management app using Java and Swing API.' },
-    { image: whiskerwagsImage, title: 'Whiskerwags', link: '/project5', description: 'Pet adoption portal using React, Node.js, and MongoDB.' },
+    { image: project2Image, title: 'Pathfinder', link: '/project1', description: 'Course selection web portal using Spring Boot and Hibernate.' },
+    { image: project3Image, title: 'RestroManager', link: '/project2', description: 'Standalone restaurant management app using Java and SQL.' },
+    { image: project1Image, title: 'StockOptimate', link: '/project3', description: 'Stock management system with MSSQL, PowerBI, and Node.js.' },
+    { image: project4Image, title: 'Hospital Admin', link: '/project4', description: 'Standalone hospital management app using Java and Swing API.' },
+    { image: project5Image, title: 'Whiskerwags', link: '/project5', description: 'Pet adoption portal using React, Node.js, and MongoDB.' },
   ];
 
   useEffect(() => {
