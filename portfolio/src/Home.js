@@ -6,14 +6,14 @@ import { FaJava, FaPython, FaReact, FaNodeJs,  FaAws } from 'react-icons/fa';
 import { SiC, SiCplusplus, SiMysql, SiMongodb, SiJavascript, SiTypescript, SiSpringboot, SiHibernate, SiFirebase, SiPostgresql  } from 'react-icons/si';
 
 // Importing images for work experience and projects
-import experience1Image from './assets/Velozy.jpg';
+import experience1Image from './assets/Velozy.png';
 import experience2Image from './assets/Cynet_Logo.jpg';
 import experience3Image from './assets/Mastech_Digital_Logo.jpg';
-import experience4Image from './assets/Vertige-Logo.webp';
+import experience4Image from './assets/Vertige.png';
 import project1Image from './assets/stockoptimate.png';
 import project2Image from './assets/pathfinder.png';
-import project3Image from './assets/restromanager.png';
-import project4Image from './assets/hospital.png';
+import project3Image from './assets/Restroman.png';
+import project4Image from './assets/Hospitiuman.png';
 import project5Image from './assets/wiskerwags.png';
 
 
@@ -24,7 +24,7 @@ const Home = () => {
 
   const experienceSlides = [
     {image: experience4Image, title: 'Vertige - Fullstack Application Developer', description: 'Spearheaded the entire Android application development for Vertige, using React Native, typescript, Firebase cloud and databases.'},
-    { image: experience1Image, title: 'Velozy - Frontend Developer', description: 'Refined the Velozy app using React Native with Expo, improved UX/UI and reduced app crashes by 15%.' },
+    { image: experience1Image, title: 'Velozy - Fullstack Developer', description: 'Refined the Velozy app using React Native with Expo, improved UX/UI and reduced app crashes by 15%.' },
     { image: experience2Image, title: 'Cynet Systems - Software Developer', description: 'Built a candidate data processing system with Spring Boot, Hibernate and MongoDB, reducing retrieval latency by 20%.' },
     { image: experience3Image, title: 'Mastech Digital - Software Developer', description: 'Developed full-stack system with Node.js, Spring Boot, and PostgreSQL, optimizing processing time by 20%.' },
   ];
