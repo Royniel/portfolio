@@ -23,18 +23,18 @@ const Home = () => {
   const [projIndex, setProjIndex] = useState(0);
 
   const experienceSlides = [
-    {image: experience4Image, title: 'Vertige - Fullstack Application Developer', description: 'Spearheaded the entire Android application development for Vertige, using React Native, typescript, Firebase cloud and databases.'},
-    { image: experience1Image, title: 'Velozy - Fullstack Developer', description: 'Refined the Velozy app using React Native with Expo, improved UX/UI and reduced app crashes by 15%.' },
-    { image: experience2Image, title: 'Cynet Systems - Software Developer', description: 'Built a candidate data processing system with Spring Boot, Hibernate and MongoDB, reducing retrieval latency by 20%.' },
-    { image: experience3Image, title: 'Mastech Digital - Software Developer', description: 'Developed full-stack system with Node.js, Spring Boot, and PostgreSQL, optimizing processing time by 20%.' },
+    {image: experience4Image, title: 'Vertige - Fullstack Application Developer', description: 'Vertige is a healthcare startup that deals with patients suffering from Vertigo. I was appointed as a Fullstack Application Developer and was responsible for desiginig and developing the Mobile Application in React Native for IOS and Android also migrating the existing iOS Application code from Swift'}, 
+    { image: experience1Image, title: 'Velozy - Fullstack Developer', description: 'Velozy is an early startup which aims to unify the bikers community. The application was available in Android and IOS. I was responsible development, redisigning and debugging of the application. The Codebase was built using React Native with Expo, Node.js, MongoDB, and Firebase.' },
+    { image: experience2Image, title: 'Cynet Systems - Software Developer', description: 'Cynet Systems is a sister company of Cynet Global based out in Sterling, VA, is responsible for all the IT operations of the organization. Since the company deals with staffing, I was responsible to develop and maintain its Application Tracking System leveraging the pre-existing candidate database for HCL. The codebase was built with the React & Angular for the frontend, Java for the backend and Springboot framework with Hibernate for the PostgreSQLdatabase connection.' },
+    { image: experience3Image, title: 'Mastech Digital - Software Developer', description: 'Mastech Digital is multinational Conglomorate based out in Pittsburg, PA catering IT projects and consulting. Here I served in couple projects for Infosys, where I was resposible for maintaining and developing the  React.js and Node.js codebases as well Angular with Java, deploying dockerized containers through Kafka. ' },
   ];
 
   const projectSlides = [
-    { image: project2Image, title: 'Pathfinder', link: '/project1', description: 'Course selection web portal using Spring Boot and Hibernate.' },
-    { image: project3Image, title: 'RestroManager', link: '/project2', description: 'Standalone restaurant management app using Java and SQL.' },
-    { image: project1Image, title: 'StockOptimate', link: '/project3', description: 'Stock management system with MSSQL, PowerBI, and Node.js.' },
-    { image: project4Image, title: 'Hospital Admin', link: '/project4', description: 'Standalone hospital management app using Java and Swing API.' },
-    { image: project5Image, title: 'Whiskerwags', link: '/project5', description: 'Pet adoption portal using React, Node.js, and MongoDB.' },
+    { image: project2Image, title: 'Pathfinder', link: '/project1', description: 'This project was designed for students to select the courses as per their previous experience and interests. The codebase contained Java with Spring Boot framework and Hibernate with MSSQL as DBMS where STS was use as IDE.' },
+    { image: project3Image, title: 'RestroManager', link: '/project2', description: 'This standalone application was a freelance project designed for a restaurant to manage its inventory, billing and table management. The codebase contained Java with Swing APIs using the NetBeans IDE and MySQL as DBMS where JDBC was used to connect with the database.' },
+    { image: project1Image, title: 'StockOptimate', link: '/project3', description: ' StockOptimate is a application which was designed for huge Inventory management. To manage large scale data inflow complex SQL queries were created through MSSQL and the front end was created on React.js and connected the backend with Node.js also PowerBI was used for data visualization.' },
+    { image: project4Image, title: 'Hospitiuman', link: '/project4', description: 'Hospitiuman is a optimal Hospital Management standalone application designed for managing the beds for patients, designated doctors along with their respective feedback. The codebase was based on Java with Swing APIs using the NetBeans IDE and MySQL as DBMS where JDBC was used to connect with the database.' },
+    { image: project5Image, title: 'Whiskerwags', link: '/project5', description: 'Whiskerwasgs is a pet adoption portal which was designed for pet owners to find and adopt a suitable pet for their family. The project was based on MERN stack, where MongoDB was used for DBMS, React and Node for front and backend also using the Material UI and Express as Middleware'},
   ];
 
   useEffect(() => {
