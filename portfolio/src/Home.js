@@ -25,8 +25,8 @@ const Home = () => {
   const experienceSlides = [
     {image: experience4Image, title: 'Vertige - Fullstack Application Developer', description: 'Vertige is a healthcare startup that deals with patients suffering from Vertigo. I was appointed as a Fullstack Application Developer and was responsible for desiginig and developing the Mobile Application in React Native for IOS and Android also migrating the existing iOS Application code from Swift'}, 
     { image: experience1Image, title: 'Velozy - Fullstack Developer', description: 'Velozy is an early startup which aims to unify the bikers community. The application was available in Android and IOS. I was responsible development, redisigning and debugging of the application. The Codebase was built using React Native with Expo, Node.js, MongoDB, and Firebase.' },
-    { image: experience2Image, title: 'Cynet Systems - Software Developer', description: 'Cynet Systems is a sister company of Cynet Global based out in Sterling, VA, is responsible for all the IT operations of the organization. Since the company deals with staffing, I was responsible to develop and maintain its Application Tracking System leveraging the pre-existing candidate database for HCL. The codebase was built with the React & Angular for the frontend, Java for the backend and Springboot framework with Hibernate for the PostgreSQLdatabase connection.' },
-    { image: experience3Image, title: 'Mastech Digital - Software Developer', description: 'Mastech Digital is multinational Conglomorate based out in Pittsburg, PA catering IT projects and consulting. Here I served in couple projects for Infosys, where I was resposible for maintaining and developing the  React.js and Node.js codebases as well Angular with Java, deploying dockerized containers through Kafka. ' },
+    { image: experience2Image, title: 'HCL - Software Developer', description: 'Cynet Systems is a sister company of Cynet Global based out in Sterling, VA, is responsible for all the IT operations of the organization. Since the company deals with staffing, I was responsible to develop and maintain its Application Tracking System leveraging the pre-existing candidate database for HCL. The codebase was built with the React & Angular for the frontend, Java for the backend and Springboot framework with Hibernate for the PostgreSQLdatabase connection.' },
+    { image: experience3Image, title: 'Infosys - Software Developer', description: 'Mastech Digital is multinational Conglomorate based out in Pittsburg, PA catering IT projects and consulting. Here I served in couple projects for Infosys, where I was resposible for maintaining and developing the  React.js and Node.js codebases as well Angular with Java, deploying dockerized containers through Kafka. ' },
   ];
 
   const projectSlides = [
@@ -79,7 +79,7 @@ const Home = () => {
     <div id="work" className="section-box">
       {/* Work Experience Section */}
       <div className="carousel-section">
-        <h1>Work Experience</h1>
+        <h2>Work Experience</h2>
         <div className="carousel-container work-experience">
           <div className="carousel-slide">
             <img src={experienceSlides[expIndex].image} alt={experienceSlides[expIndex].title} />
@@ -101,7 +101,7 @@ const Home = () => {
         {/* Projects Section */}
         <div id="projects" className="section-box">
           <div className="carousel-section">
-            <h1>Projects</h1>
+            <h2>Projects</h2>
             <div className="carousel-container projects">
               <div className="carousel-slide" onClick={() => navigate(projectSlides[projIndex].link)} style={{ cursor: 'pointer' }}>
                 <img src={projectSlides[projIndex].image} alt={projectSlides[projIndex].title} />

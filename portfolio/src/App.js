@@ -1,4 +1,5 @@
 import './App.css';
+import React, { useState, useEffect } from 'react';
 import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import { ThemeProvider, createTheme } from '@mui/material/styles';
 import Home from './Home';
@@ -10,10 +11,31 @@ import Project5 from './pages/Project5';
 import myImage from './assets/my.jpg';
 import backgroundVideo from './assets/back.mp4';
 import Header from './Header';
+import {ReactTyped} from 'react-typed';
+
 
 const theme = createTheme();
 
+
+// rest of your imports...
+
 function App() {
+  const [nameToggle, setNameToggle] = useState(true); // Toggle between Nilanjan and Niel
+  const [techIndex, setTechIndex] = useState(0);
+  const techWords = ['Software', 'Fullstack', 'Front-end', 'Backend'];
+
+  useEffect(() => {
+    const nameInterval = setInterval(() => setNameToggle(prev => !prev), 2000);
+    const techInterval = setInterval(() => setTechIndex(prev => (prev + 1) % techWords.length), 1500);
+    return () => {
+      clearInterval(nameInterval);
+      clearInterval(techInterval);
+    };
+  }, []);
+
+  const currentName = nameToggle ? 'Nilanjan Roy a.k.a' : 'Niel';
+  const currentTech = techWords[techIndex];
+
   return (
     <ThemeProvider theme={theme}>
       <Router>
@@ -29,14 +51,43 @@ function App() {
 
           {/* Scrollable Content */}
           <div className="page-content">
-          <Header />
-         
+            <Header />
+
             {/* Banner Content */}
             <div className="banner-content">
-              <h1 className="fade-in-text">Hi! This is Nilanjan Roy<br/><br/>Welcome to my Software Development Journey...</h1>
-            </div>
-           
-            
+  <div className="banner-line">
+    <h1 className="fade-in-text">
+      Hi! This is{' '}
+      <span className="gradient-text">
+        <ReactTyped
+          strings={['Nilanjan', 'Niel']}
+          typeSpeed={60}
+          backSpeed={40}
+          loop
+          showCursor={true}
+          cursorChar="/>"
+        />
+      </span>
+    </h1>
+  </div>
+
+  <div className="banner-line">
+    <h1 className="fade-in-text">
+      Welcome to my{' '}
+      <span className="gradient-text">
+        <ReactTyped
+          strings={['Software', 'Fullstack', 'Front-end', 'Backend']}
+          typeSpeed={60}
+          backSpeed={40}
+          loop
+          showCursor={true}
+          cursorChar="/>"
+        />
+      </span>{' '}
+      Development Journey.
+    </h1>
+  </div>
+</div>
 
 
             {/* About Me Section */}
