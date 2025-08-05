@@ -31,10 +31,8 @@ function App() {
       clearInterval(nameInterval);
       clearInterval(techInterval);
     };
-  }, []);
+  }, [techWords.length]); // ✅ include dependency to satisfy ESLint
 
-  const currentName = nameToggle ? 'Nilanjan Roy a.k.a' : 'Niel';
-  const currentTech = techWords[techIndex];
 
   return (
     <ThemeProvider theme={theme}>
@@ -60,7 +58,7 @@ function App() {
       Hi! This is{' '}
       <span className="gradient-text">
         <ReactTyped
-          strings={['Nilanjan', 'Niel']}
+          strings={['Nilanjan', 'a.k.a', 'Niel']}
           typeSpeed={60}
           backSpeed={40}
           loop
