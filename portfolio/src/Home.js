@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { IconButton } from '@mui/material';
 import { ArrowBackIos, ArrowForwardIos } from '@mui/icons-material';
 import { FaJava, FaPython, FaReact, FaNodeJs,  FaAws } from 'react-icons/fa';
-import { SiC, SiCplusplus, SiMysql, SiMongodb, SiJavascript, SiTypescript, SiSpringboot, SiHibernate, SiFirebase, SiPostgresql  } from 'react-icons/si';
+import { SiC, SiCplusplus, SiMysql, SiMongodb, SiJavascript, SiTypescript, SiSpringboot, SiHibernate, SiFirebase, SiPostgresql, SiDocker, SiKubernetes, SiGithubactions, SiApachekafka, SiJenkins   } from 'react-icons/si';
 
 // Importing images for work experience and projects
 import experience1Image from './assets/Velozy.png';
@@ -72,6 +72,11 @@ const Home = () => {
           <SiSpringboot title="Springboot" size={40} />
           <SiTypescript title="Typescript" size={40} />
           <SiFirebase title="Firebase" size={40} />
+          <SiDocker title="Docker" size={40} />
+          <SiKubernetes title="Kubernetes" size={40} />
+          <SiApachekafka title="Apache Kafka" size={40} />
+          <SiJenkins title="Jenkins" size={40} />  
+          <SiGithubactions title="Github Actions" size={40} />
         </div>
       </div>
     </div><>
