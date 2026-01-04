@@ -126,32 +126,45 @@ function App() {
 }
 
 /* Footer Component */
+/* Updated Footer Component */
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
-        <div className="footer-left">
-          <p>&copy; {new Date().getFullYear()} Nilanjan Roy. All Rights Reserved.</p>
+        
+        {/* 1. Name & Tagline */}
+        <div className="footer-brand">
+          <h2>Nilanjan Roy</h2>
+          <p style={{ fontSize: '0.9rem', color: '#888' }}>
+            Building Scalable Solutions & Digital Experiences
+          </p>
         </div>
-        <div className="footer-center">
+
+        {/* 2. Contact Links (Grouped cleanly) */}
+        <div className="footer-links">
           <a href="mailto:roy.nil@northeastern.edu" className="footer-link">
             <i className="fas fa-envelope"></i> roy.nil@northeastern.edu
-          </a><br></br>
+          </a>
           <a href="mailto:royniel08@gmail.com" className="footer-link">
             <i className="fas fa-envelope"></i> royniel08@gmail.com
           </a>
         </div>
-        <div className="footer-right">
-          <p>Follow my work on:</p>
-          <div className="social-icons">
-            <a href="https://github.com/Royniel" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-github footer-icon"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/nilanjan-roy-619535147/" target="_blank" rel="noopener noreferrer">
-              <i className="fab fa-linkedin footer-icon"></i>
-            </a>
-          </div>
+
+        {/* 3. Social Media Icons */}
+        <div className="footer-socials">
+          <a href="https://github.com/Royniel" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-github footer-icon"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/nilanjan-roy-619535147/" target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-linkedin footer-icon"></i>
+          </a>
         </div>
+
+        {/* 4. Copyright */}
+        <div className="footer-bottom">
+          <p>&copy; {new Date().getFullYear()} Nilanjan Roy. All Rights Reserved.</p>
+        </div>
+
       </div>
     </footer>
   );
