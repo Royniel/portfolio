@@ -8,7 +8,7 @@ import Project2 from './pages/Project2';
 import Project3 from './pages/Project3';
 import Project4 from './pages/Project4';
 import Project5 from './pages/Project5';
-import myImage from './assets/my.jpg';
+import myImage from './assets/my.jpeg';
 import backgroundVideo from './assets/back.mp4';
 import Header from './Header';
 import {ReactTyped} from 'react-typed';
